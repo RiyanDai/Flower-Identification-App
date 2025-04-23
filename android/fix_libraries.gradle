@@ -1,0 +1,6 @@
+ext.fixes = { applicationVariants ->
+    applicationVariants.all { variant ->
+        variant.resourcesCompat.androidResources.ignoreAssets "flutter_assets/lib/assets/*"
+        variant.resourcesCompat.androidResources.ignoreAssets "flutter_assets/assets/*"
+    }
+} 
